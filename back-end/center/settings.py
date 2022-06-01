@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'login',
 ]
 
 MIDDLEWARE = [
@@ -72,15 +74,17 @@ WSGI_APPLICATION = 'center.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+import pymysql
+pymysql.install_as_MySQLdb()
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
-    'USER' : 'root',
-    'PASSWORD' : 'zoqtmxhsa+',
-    'HOST' : '127.0.0.1',
-    'PORT' : '3306',
+        'NAME': 'capstone',
+        'USER' : 'root',
+        'PASSWORD' : 'zoqtmxhsa+',
+        'HOST' : '127.0.0.1',
+        'PORT' : '3306',
     }
 }
 
