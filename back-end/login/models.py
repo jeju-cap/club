@@ -19,8 +19,8 @@ class Users(models.Model):
     password = models.CharField(max_length=45)
     sex = models.CharField(max_length=45)
     major = models.CharField(max_length=45)
-    created_at = models.DateTimeField()
-    modified_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    modified_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         managed = False
