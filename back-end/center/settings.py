@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 
     'login',
 ]
@@ -82,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'capstone',
         'USER' : 'root',
-        'PASSWORD' : 'zoqtmxhsa+',
+        'PASSWORD' : 'audgns75@@',
         'HOST' : '127.0.0.1',
         'PORT' : '3306',
     }
